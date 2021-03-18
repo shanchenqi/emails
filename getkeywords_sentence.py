@@ -38,7 +38,7 @@ def getemail(name, date1="2008-1-1", date2="2020-12-12"):
         year = date.split("-")[0]
         month = date.split("-")[1]
         day = date.split("-")[2]
-     
+
         if os.path.exists(os.path.join(files, year, month, day)):
             for idex in os.listdir(os.path.join(files, year, month, day)):
                 with open(os.path.join(files, year, month, day, idex), 'r') as txtfile:
@@ -50,72 +50,10 @@ def getemail(name, date1="2008-1-1", date2="2020-12-12"):
 
 
 
-def getkeywords_tfidf_sklearn(text):
-
-    # text = getemail(name)
-    # text = lemmatization(text, allowed_postags=['NOUN', 'ADJ', 'VERB', 'ADV'])
-    vectorizer = CountVectorizer(max_df = 0.85, max_features=2000, stop_words='english')
-    #该类会统计每个词语的tf-idf权值
-    tf_idf_transformer = TfidfTransformer()
-    #将文本转为词频矩阵并计算tf-idf
-    tf_idf = tf_idf_transformer.fit_transform(vectorizer.fit_transform(text))
-    #将tf-idf矩阵抽取出来，元素a[i][j]表示j词在i类文本中的tf-idf权重
-    # x_train_weight = tf_idf.toarray()
-    feature_names = vectorizer.get_feature_names()
-    doc = text[2]
-    tf_idf_vector = tf_idf_transformer.transform(vectorizer.transform([doc]))
-    sorted_item = sort_coo(tf_idf_vector.tocoo())
-    keywords = extract_topn_from_vector(feature_names, sorted_item,10)
-    # stopwords = args.stopwords
-    print("tf-idf:", keywords.keys())
-    return keywords
-
 def stopwordslist(stopwordsfile):
     stopwords = [line.strip() for line in open(stopwordsfile, encoding='UTF-8').readlines()]
     return stopwords
 
-
-def getkeywords_jieba(text, stopwordsfile):
-    jieba.analyse.set_stop_words(stopwordsfile)
-    keywords = jieba.analyse.extract_tags("".join(text),topK=10, withWeight=False, allowPOS=())
-    print("jieba:", keywords)
-    return keywords
-
-def sort_coo(coo_matrix):
-    tuples = zip(coo_matrix.col, coo_matrix.data)
-    return sorted(tuples, key=lambda x: (x[1], x[0]), reverse=True)
-
-def extract_topn_from_vector(feature_names, sorted_items, topn=10):
-    """get the feature names and tf-idf score of top n items"""
-
-    #use only topn items from vector
-    sorted_items = sorted_items[:topn+5]
-
-    score_vals = []
-    feature_vals = []
-
-    # word index and corresponding tf-idf score
-    for idx, score in sorted_items:
-        if str.isdigit(feature_names[idx]) and int(feature_names[idx])not in range(2008,2021):
-            continue
-        #keep track of feature name and its corresponding score
-        score_vals.append(round(score, 3))
-        feature_vals.append(feature_names[idx])
-
-    #create a tuples of feature,score
-    results= {}
-    for idx in range(len(feature_vals[:topn])):
-        results[feature_vals[idx]]=score_vals[idx]
-    return results
-
-def read_name_lists(files):
-    df = pd.read_csv(files, usecols=[0], names=None, keep_default_na=False)  # 读取项目名称列,不要列名
-    df_li = df.values.tolist()
-    result = []
-    for s_li in df_li:
-        result.append(s_li[0])
-    # print(result)
-    return result
 
 def keywords_to_scv(file_name, stopwordsfile, date1="2008-1-1", date2="2020-12-12"):
     names = read_name_lists(file_name)
@@ -128,8 +66,7 @@ def keywords_to_scv(file_name, stopwordsfile, date1="2008-1-1", date2="2020-12-1
             dic[name] = keywords_sentence_transformer
     df = pd.read_csv(file_name)
     for i in range(df.shape[0]):
-        if df.iloc[i,0] in dic:# and len(dic[df.iloc[i,0]])>1:
-            #df.loc[i,"bert"] = ','.join(dic[df.iloc[i,0]])
+        if df.iloc[i,0] in dic:
             df.loc[i,"bert"] = str(dic[df.iloc[i,0]])
     df.to_csv(file_name.split('.')[0]+"res4.csv",index=0)
 
