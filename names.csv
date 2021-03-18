@@ -1,45 +1,38 @@
-Name,num,email,country,Unnamed: 4
-Kurt Seifried,2089,kseifrie@redhat.com,加拿大,领英：https://www.linkedin.com/in/kurtseifried/
-Solar Designer,990,solar@openwall.com,斯洛文尼亚,"推特：https://twitter.com/solardiz
-领英：https://www.linkedin.com/in/solar/?originalSubdomain=si"
-Eugene Teo,528,eugene@redhat.com,新加坡,领英：https://www.linkedin.com/in/eugeneteo/
-Hanno Böck,489,hanno@hboeck.de,柏林,"领英：https://www.linkedin.com/in/hanno-b%C3%B6ck-a2b52a3/
-主页：https://hboeck.de/"
-Xen.org security team,486,security@xen.org,英国,Chairman Emeritus领英：https://www.linkedin.com/in/ianpratt/?originalSubdomain=uk
-Jan Lieskovsky,459,jlieskov@redhat.com,捷克,领英：https://www.linkedin.com/in/j%C3%A1n-lieskovsk%C3%BD-207167112/
-P J P,429,ppandit@redhat.com,　,　
-Henri Salo,410,henri@nerv.fi,芬兰,领英：https://www.linkedin.com/in/henri-salo-08948655/
-Florian Weimer,403,fweimer@redhat.com,德国,"github:https://github.com/fweimer
-主页：https://www.enyo.de/fw/"
-Marcus Meissner,380,meissner@suse.de,德国,领英：https://www.linkedin.com/in/marcusmeissner/?originalSubdomain=de
-Tomas Hoger,352,thoger@redhat.com,　,　
-Vincent Danen,330,vdanen@redhat.com,加拿大,"github：https://github.com/vdanen
-领英：https://www.linkedin.com/in/vdanen/
-blog：https://annvix.com/"
-Salvatore Bonaccorso,329,carnil@debian.org,　,　
-Nico Golde,241,oss-security+ml@ngolde.de,柏林,https://www.linkedin.com/in/nicogolde/
-Petr Matousek,214,pmatouse@redhat.com,捷克,领英：https://www.linkedin.com/in/petr-matousek-a7318113b/?originalSubdomain=cz
-Greg KH,204,greg@kroah.com,尼德兰,领英：https://www.linkedin.com/in/greg-kroah-hartman/
-Raphael Geissert,177,geissert@debian.org,法国,https://www.linkedin.com/in/raphaelgeissert/?originalSubdomain=fr
-Moritz Muehlenhoff,175,jmm@debian.org,　,gitlab：https://salsa.debian.org/jmm
-Huzaifa Sidhpurwala,143,huzaifas@redhat.com,印度,领英：https://www.linkedin.com/in/huzaifa-sidhpurwala-bb639b11/
-Sebastian Krahmer,137,krahmer@suse.de,德国,领英：https://www.linkedin.com/in/0ut/
-Yves-Alexis Perez,135,corsac@debian.org,法国,https://www.linkedin.com/in/corsac/
-Agostino Sarubbo,131,ago@gentoo.org,意大利,"领英：https://www.linkedin.com/in/agostino-sarubbo/
-github：https://github.com/asarubbo/"
-Larry W. Cashdolla,126,larry0@...com,　,　
-Ludwig Nussel,120,ludwig.nussel@suse.de,德国,https://www.linkedin.com/in/ludwig-nussel-39929890/?originalSubdomain=de
-Simon McVittie,112,smcv@debian.org,英国,领英：https://www.linkedin.com/in/smcvittie/
-Jason A. Donenfeld,107,Jason@zx2c4.com,　,　
-Murray McAllister,104,murray.mcallister@insomniasec.com,新西兰,领英：https://www.linkedin.com/in/murray-mcallister-b1b5a64/
-Marc Deslauriers,90,marc.deslauriers@canonical.com,加拿大,领英：https://www.linkedin.com/in/marc-deslauriers-4462735/
-Daniel Micay,86,danielmicay@gmail.com,加拿大,"领英：https://www.linkedin.com/in/danielmicay/
-github：https://github.com/thestinger"
-John Haxby,86,john.haxby@oracle.com,英国,领英：https://www.linkedin.com/in/jchaxby/
-Thomas Biege,85,thomas@suse.de,德国,领英：https://www.linkedin.com/in/thomas-biege-7061971/
-Robert Buchholz,81,rbu@gentoo.org,德国,领英：https://www.linkedin.com/in/rbuchholz/
-Josh Bressers,931,bressers@redhat.com,美国,https://www.linkedin.com/in/joshbressers/
-Steven M. Christey,728,coley@linus.mitre.org,美国,领英：https://www.linkedin.com/in/steve-christey-coley-66aa1826/
-Tavis Ormandy,133,taviso@google.com,美国,领英：https://www.linkedin.com/in/taviso/
-Daniel Kahn Gillmor,93,dkg@fifthhorseman.net,美国,主页：https://www.crunchbase.com/person/daniel-kahn-gillmor
-Seth Arnold,111,seth.arnold@canonical.com,美国,领英：https://www.linkedin.com/in/arnoldseth/
+Name,num
+Kurt Seifried,2089
+Solar Designer,990
+Eugene Teo,528
+Hanno Böck,489
+Xen.org security team,486
+Jan Lieskovsky,459
+P J P,429
+Henri Salo,410
+Florian Weimer,403
+Marcus Meissner,380
+Tomas Hoger,352
+Vincent Danen,330
+Salvatore Bonaccorso,329
+Nico Golde,241
+Petr Matousek,214
+Greg KH,204
+Raphael Geissert,177
+Moritz Muehlenhoff,175
+Huzaifa Sidhpurwala,143
+Sebastian Krahmer,137
+Yves-Alexis Perez,135
+Agostino Sarubbo,131
+Larry W. Cashdolla,126
+Ludwig Nussel,120
+Simon McVittie,112
+Jason A. Donenfeld,107
+Murray McAllister,104
+Marc Deslauriers,90
+Daniel Micay,86
+John Haxby,86
+Thomas Biege,85
+Robert Buchholz,81
+Josh Bressers,931
+Steven M. Christey,728
+Tavis Ormandy,133
+Daniel Kahn Gillmor,93
+Seth Arnold,111
