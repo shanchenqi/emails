@@ -2,4 +2,5 @@
 
 使用bert完成关键字提取：getkeywords_keybert.py
 
-结果：namesres2.csv
+使用tf-idf完成关键词提取：getkeywords_tfidf.py
+
